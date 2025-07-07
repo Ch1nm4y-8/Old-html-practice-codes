@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container1 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0px;
+}
+
+nav .left {
+  display: flex;
+  align-items: center;
+  font-size: 2.5vw;
+}
+
+nav .right ul {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+nav .right ul {
+  list-style-type: none;
+}
+
+nav .right ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3vw;
+  font-weight: 900;
+}
+nav .right ul li {
+  padding: 15px;
+}
+nav .right ul li:nth-last-child(1) {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5vh 0px;
+}
+
+.leftMain {
+  width: 40%;
+}
+
+.leftMain p {
+  font-size: 1.4vw;
+  margin: 1vh 0px;
+}
+.leftMain h1 {
+  font-size: 4.5vw;
+}
+
+.bookConsultationBtn {
+  padding: 2vh 2vw;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 1vw;
+  font-size: 1vw;
+  margin: 2vh 0px;
+}
+
+.rightMain {
+  width: 30%;
+}
+
+.rightMain img {
+  width: 100%;
+}
+
+.container1 {
+  overflow-x: hidden;
+}
+
+.scroll {
+  display: flex;
+  align-items: center;
+  gap: 20vw;
+  margin: 2vh 2vw;
+  /* transform: translateX(-188%); */
+}
+
+.scroll img {
+  width: 15vw;
+  height: 7vh;
+}
+
+.container2 {
+  padding: 5vh 7vw;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  margin-bottom: 5vh;
+}
+
+.heading h3 {
+  font-size: 4vw;
+  background-color: greenyellow;
+}
+
+.heading p {
+  width: 50vw;
+}
+
+.card {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  height: 280px;
+  padding: 5vh;
+  border-radius: 2vw;
+  border: 1px solid black;
+  border-bottom: 10px solid black;
+}
+
+.cardLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardLeft i {
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 2vw;
+}
+
+.cardLeftBottom {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.cardLeft h1 {
+  background-color: greenyellow;
+  font-size: 2.5vw;
+  width: fit-content;
+}
+
+.cardRight {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.cardRight img {
+  position: relative;
+  width: 100%;
+  right: 0;
+}
+
+.twoCards {
+  display: flex;
+  justify-content: space-between;
+  margin: 5vh 0;
+}
+
+.darkCard {
+  background-color: black;
+  color: white;
+}
+.darkCard h1 {
+  background-color: white;
+  color: black;
+}
+.darkCard i {
+  color: white;
+  border: 1px solid white;
+}
+
+.container3 {
+  width: 100%;
+  padding: 5vh 7vw;
+}
+
+.section3Card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  padding: 3vw;
+}
+
+.section3CardLeft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.section3CardLeft button {
+  align-self: center;
+}
+.section3CardLeft h1 {
+  font-size: 3vw;
+}
+.section3CardLeft p {
+  font-size: 1.3vw;
+}
+
+.section3CardRight {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3CardRight img {
+  width: 45%;
+}

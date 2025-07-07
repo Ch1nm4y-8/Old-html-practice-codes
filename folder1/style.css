@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background-color: #161d22;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #161d2267;
+}
+
+.part1 {
+  /* background-color: red; */
+  width: 25%;
+  height: 100%;
+}
+.part2 {
+  background-color: rgb(53, 216, 162);
+  background-image: url(https://images.unsplash.com/photo-1616788494672-ec7ca25fdda9?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJlbnp8ZW58MHx8MHx8fDA%3D);
+
+  background-size: cover;
+  background-position: 0% 48%;
+  width: 65%;
+  height: 100%;
+}
+.part3 {
+  /* background-color: rgb(53, 21, 211); */
+  width: 10%;
+  height: 100%;
+}
+
+.text-main {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+}
+
+.text-main h1 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  font-size: 130px;
+  line-height: 110px;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+.image-div {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 20%;
+  height: 50%;
+  background-image: url(https://images.unsplash.com/photo-1580881647059-923632b8fd75?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGJlbnp8ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  background-position: 0% 10%;
+  box-shadow: -20px 20px 30px black;
+}
+
+.vertical-text {
+  position: absolute;
+  top: 37%;
+  right: -18%;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  transform: rotate(90deg);
+}
+
+.vertical-text h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 120px;
+  color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+nav {
+  width: 45%;
+  height: 20%;
+  position: absolute;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 150px;
+}
+
+nav img {
+  height: 60%;
+}
+
+nav h1 {
+  font-size: 30px;
+  color: white;
+}

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 100%;
+  height: 100%;
+  /* background-color: #0C0B0D; */
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  height: 80%;
+  z-index: 2;
+}
+
+.scroll-text1 {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  color: #c9a63c;
+}
+.scroll-text1::-webkit-scrollbar {
+  display: none;
+}
+.scroll-text1 h1 {
+  margin-right: 40px;
+  font-size: 110px;
+  text-transform: uppercase;
+  display: inline-block;
+
+  animation-name: scroll;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.scroll-text2 {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+}
+.scroll-text2::-webkit-scrollbar {
+  display: none;
+}
+.scroll-text2 h1 {
+  margin-right: 40px;
+  font-size: 110px;
+  -webkit-text-stroke-color: #c9a63c;
+  -webkit-text-stroke-width: 2px;
+  color: transparent;
+
+  text-transform: uppercase;
+  display: inline-block;
+
+  animation-name: scroll;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+
+.scroll-text3 {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  top: 65%;
+  left: 0%;
+  color: #c9a63c;
+}
+.scroll-text3::-webkit-scrollbar {
+  display: none;
+}
+.scroll-text3 h1 {
+  margin-right: 40px;
+  font-size: 110px;
+  text-transform: uppercase;
+  display: inline-block;
+
+  animation-name: scroll;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(calc(-100% - 45px));
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}

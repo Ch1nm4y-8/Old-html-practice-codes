@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Metal+Mania&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+*::selection {
+  background-color: #9bd81a;
+  color: black;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  background-color: black;
+}
+
+nav {
+  padding: 10vh 2vw;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  align-items: center;
+  height: 100px;
+}
+
+nav > a {
+  text-decoration: none;
+  font-family: Cinzel, serif;
+  font-size: 1vw;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.5vw 1vw;
+  border-radius: 0.2vw;
+}
+
+nav > a:hover {
+  border-bottom: 1px solid #9bd81a;
+  background-color: #9bd81a;
+  color: black;
+}
+
+nav .navcenter {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  width: 9vmax;
+  margin-right: -1vw;
+  cursor: pointer;
+}
+
+.green-stroke {
+  width: 8vw;
+  height: 0.2vw;
+  background-color: #9bd81a;
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+}
+
+.page1content {
+  margin: auto;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.p1leftcontent {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  top: 0;
+}
+
+.p1leftcontent > img {
+  width: 80%;
+
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  filter: blur(12px);
+}
+
+.bottlecontainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bottlecontainer img {
+  filter: brightness(0.7) contrast(1.2);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p1centercontent {
+  width: 25%;
+}
+
+.p1centercontent h1 {
+  text-align: left;
+  font-size: 4vmax;
+  color: white;
+  font-weight: 100;
+}
+
+.p1centercontent h1 span {
+  color: #9bd81a;
+  font-size: 4vmax;
+  border-bottom: 1px solid white;
+  font-family: "Metal Mania";
+
+  &:hover {
+    background-color: #9bd81a;
+    color: black;
+  }
+}
+
+.p1rightcontent {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2vw;
+  justify-content: center;
+  /* background-color: rgb(116, 121, 167); */
+}
+
+.p1rightcontent p {
+  width: 80%;
+  text-align: justify;
+  font-size: 1.2vw;
+}
+
+.p1rightcontent button {
+  background-color: #9bd81a;
+  padding: 1vw 2vw;
+  border: none;
+  border-radius: 2vw;
+  color: black;
+  font-size: 1vw;
+  cursor: pointer;
+}
+
+.page2 {
+  width: 100%;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5vw;
+  padding: 5vh 0;
+  overflow-x: hidden;
+  padding-bottom: 20vh;
+}
+
+.page2 h1 {
+  font-size: 5vw;
+  text-align: center;
+  margin: 3vh auto;
+  font-family: "Bebas";
+  border-bottom: 2px solid #9bd81a;
+}
+
+.card {
+  padding: 3vh 0;
+  width: 80%;
+  height: 30vw;
+  background-color: black;
+  box-shadow: 0px 0px 30px #9bd81a;
+  border-bottom-right-radius: 3vw;
+  border-top-right-radius: 3vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.cardright {
+  align-self: end;
+  border-bottom-left-radius: 3vw;
+  border-top-left-radius: 3vw;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.mdimgcontainer {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+}
+
+.mdimgcontainer img {
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.card p {
+  text-align: center;
+  width: fit-content;
+  background-color: black;
+  font-size: 1.5vw;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+}
+
+.canvascontainer {
+  height: 700vh;
+  position: relative;
+}
+
+.canvasele {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.canvasele h1 {
+  position: absolute;
+  top: 0;
+  left: 10vw;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3.8vmax;
+  color: white;
+  font-family: "Bebas";
+}
+
+.canvasele h1 span {
+  color: #c3a72c;
+  font-size: 7vmax;
+  font-family: "metal mania";
+  font-weight: 100;
+}
+
+.page3 {
+  width: 100%;
+}
+
+.page3 > h1 {
+  font-size: 4vw;
+  margin: 1vh auto;
+  text-align: center;
+  border-bottom: 1px solid #9bd81a;
+}
+
+.page3content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.p3leftcontent {
+  width: 50%;
+  margin: 8vw 0px;
+}
+
+.p3leftcontent img {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+}
+
+.p3rightcontent {
+  width: 50%;
+}
+
+.p3rightcontent h4 {
+  width: 80%;
+  font-size: 1.8vw;
+  text-indent: 5vw;
+  text-align: justify;
+}
+
+.slider {
+  width: 100%;
+  height: 5vw;
+  background-color: #9bd81a;
+  display: flex;
+  align-items: center;
+  gap: 3vmax;
+  overflow: hidden;
+}
+
+.slider h1 {
+  flex-shrink: 0;
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h1 {
+  color: #9bd81a;
+  font-size: 1.2vw;
+}
+
+@media (max-width: 910px) {
+  .p1rightcontent {
+    display: none;
+  }
+
+  .p1leftcontent {
+    width: 70%;
+  }
+  .p1centercontent {
+    width: 30%;
+  }
+}
